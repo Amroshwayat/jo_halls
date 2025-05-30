@@ -1,0 +1,120 @@
+body {
+    background: #f8f8f8;
+}
+.form-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    max-width: 800px;
+    margin: 40px auto 20px auto;
+    padding: 40px 32px 32px 32px;
+}
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff5eaa;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.form-section {
+    margin-bottom: 28px;
+}
+.form-section h3 {
+    color: #333;
+    margin-bottom: 18px;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.form-group {
+    margin-bottom: 18px;
+}
+.form-group label {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1.05rem;
+    background: #fafbfc;
+    transition: border 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #ff5eaa;
+    outline: none;
+}
+.hall-form button.btn,
+.hall-form input[type="submit"],
+.hall-form .btn {
+    background: #ff5eaa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 26px;
+    font-size: 1.08rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-right: 8px;
+    transition: background 0.2s;
+}
+.hall-form button.btn:hover,
+.hall-form input[type="submit"]:hover,
+.hall-form .btn:hover {
+    background: #e14d96;
+}
+.alert {
+    padding: 12px 18px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+.alert-error {
+    background: #ffeaea;
+    color: #d32f2f;
+}
+.amenities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    margin-bottom: 10px;
+}
+.amenity-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #f3f3f7;
+    padding: 7px 14px;
+    border-radius: 6px;
+}
+.current-images-grid, .images-preview-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+.current-images-grid img,
+.images-preview-grid img,
+.image-preview {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+@media (max-width: 700px) {
+    .form-container { padding: 16px 2vw; }
+    .form-section h3 { font-size: 1rem; }
+    .form-group input,
+    .form-group textarea,
+    .form-group select { font-size: 0.97rem; }
+}
